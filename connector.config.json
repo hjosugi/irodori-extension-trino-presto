@@ -22,6 +22,23 @@
     ],
     "connection": {
       "schemaVersion": 1,
+      "inferEnvironmentFrom": [
+        "name",
+        "id",
+        "host",
+        "database",
+        "url"
+      ],
+      "compatibility": {
+        "addsRequiredProfileFields": false,
+        "acceptsExistingProfiles": true
+      },
+      "defaults": {
+        "engine": "trinoPresto",
+        "wire": "jdbc",
+        "port": 8080,
+        "readOnly": false
+      },
       "endpoint": {
         "modes": [
           "hostPort",
@@ -417,7 +434,7 @@
         "kind": "desktop-db-contract",
         "path": "apps/desktop/src-tauri/src/db/profile.rs",
         "destination": "native/source/irodori-table/apps/desktop/src-tauri/src/db/profile.rs",
-        "sha256": "780f409093330677f157d21cb8591f2b1d2374e0251f0b0df4ed334dad175d24"
+        "sha256": "6ea079bd8fd74f687e0a549cbc3b3e97009fa5f529839831a79b8e4d69999446"
       },
       {
         "kind": "desktop-db-contract",
@@ -489,6 +506,23 @@
   },
   "connection": {
     "schemaVersion": 1,
+    "inferEnvironmentFrom": [
+      "name",
+      "id",
+      "host",
+      "database",
+      "url"
+    ],
+    "compatibility": {
+      "addsRequiredProfileFields": false,
+      "acceptsExistingProfiles": true
+    },
+    "defaults": {
+      "engine": "trinoPresto",
+      "wire": "jdbc",
+      "port": 8080,
+      "readOnly": false
+    },
     "endpoint": {
       "modes": [
         "hostPort",

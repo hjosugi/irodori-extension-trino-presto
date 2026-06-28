@@ -41,6 +41,23 @@
         ],
         "connection": {
           "schemaVersion": 1,
+          "inferEnvironmentFrom": [
+            "name",
+            "id",
+            "host",
+            "database",
+            "url"
+          ],
+          "compatibility": {
+            "addsRequiredProfileFields": false,
+            "acceptsExistingProfiles": true
+          },
+          "defaults": {
+            "engine": "trinoPresto",
+            "wire": "jdbc",
+            "port": 8080,
+            "readOnly": false
+          },
           "endpoint": {
             "modes": [
               "hostPort",
