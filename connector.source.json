@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "extensionId": "irodori.trino-presto",
+  "visibility": "public",
+  "version": "0.1.0",
+  "connector": {
+    "id": "trinoPresto.connector",
+    "engine": "trinoPresto",
+    "label": "Trino / Presto",
+    "aliases": [
+      "trinoPresto",
+      "trino-presto",
+      "Trino / Presto",
+      "Trino",
+      "Presto"
+    ],
+    "defaultPort": 8080,
+    "wire": "jdbc",
+    "module": "trinoPresto.driver",
+    "features": [
+      "metadata",
+      "sql"
+    ]
+  },
+  "connection": {
+    "endpoint": {
+      "modes": [
+        "hostPort",
+        "connectionString"
+      ],
+      "defaultPort": 8080,
+      "fields": [
+        {
+          "id": "host",
+          "label": "Host",
+          "type": "string",
+          "profileField": "host",
+          "required": true
+        },
+        {
+          "id": "port",
+          "label": "Port",
+          "type": "number",
+          "profileField": "port",
+          "default": 8080
+        },
+        {
+          "id": "database",
+          "label": "Database",
+          "type": "string",
+          "profileField": "database"
+        }
+      ]
+    },
+    "authMethods": [
+      "none",
+      "connectionString",
+      "userPassword",
+      "basic",
+      "bearerToken",
+      "oauth2",
+      "kerberos",
+      "ldap",
+      "clientCertificate",
+      "customDriverOptions"
+    ],
+    "tls": "optional",
+    "transports": "default",
+    "optionNamespaces": [
+      "jdbc",
+      "trinoPresto"
+    ],
+    "customDriverOptions": true
+  },
+  "runtime": {
+    "driverLinked": false
+  },
+  "source": {
+    "knowledgeEngineStatus": "recognized_no_connector",
+    "adapter": null
+  }
+}
