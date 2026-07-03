@@ -208,6 +208,38 @@
           ]
         },
         {
+          "id": "jwt",
+          "label": "JWT bearer token",
+          "kind": "token",
+          "secretPurposes": [
+            "token"
+          ],
+          "fields": [
+            {
+              "id": "token",
+              "label": "Token",
+              "type": "secret",
+              "secretPurpose": "token"
+            }
+          ]
+        },
+        {
+          "id": "accessToken",
+          "label": "Access token",
+          "kind": "token",
+          "secretPurposes": [
+            "token"
+          ],
+          "fields": [
+            {
+              "id": "token",
+              "label": "Token",
+              "type": "secret",
+              "secretPurpose": "token"
+            }
+          ]
+        },
+        {
           "id": "oauth2",
           "label": "OAuth 2.0",
           "kind": "oauth2",
@@ -283,6 +315,15 @@
               "profileField": "password"
             }
           ]
+        },
+        {
+          "id": "externalBrowser",
+          "label": "External browser",
+          "kind": "browserSso",
+          "secretPurposes": [
+            "token"
+          ],
+          "fields": []
         },
         {
           "id": "clientCertificate",
@@ -696,6 +737,38 @@
         ]
       },
       {
+        "id": "jwt",
+        "label": "JWT bearer token",
+        "kind": "token",
+        "secretPurposes": [
+          "token"
+        ],
+        "fields": [
+          {
+            "id": "token",
+            "label": "Token",
+            "type": "secret",
+            "secretPurpose": "token"
+          }
+        ]
+      },
+      {
+        "id": "accessToken",
+        "label": "Access token",
+        "kind": "token",
+        "secretPurposes": [
+          "token"
+        ],
+        "fields": [
+          {
+            "id": "token",
+            "label": "Token",
+            "type": "secret",
+            "secretPurpose": "token"
+          }
+        ]
+      },
+      {
         "id": "oauth2",
         "label": "OAuth 2.0",
         "kind": "oauth2",
@@ -771,6 +844,15 @@
             "profileField": "password"
           }
         ]
+      },
+      {
+        "id": "externalBrowser",
+        "label": "External browser",
+        "kind": "browserSso",
+        "secretPurposes": [
+          "token"
+        ],
+        "fields": []
       },
       {
         "id": "clientCertificate",

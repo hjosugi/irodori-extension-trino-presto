@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "extensionId": "irodori.trino-presto",
   "visibility": "public",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "connector": {
     "id": "trinoPresto.connector",
     "engine": "trinoPresto",
@@ -58,9 +58,12 @@
       "userPassword",
       "basic",
       "bearerToken",
+      "jwt",
+      "accessToken",
       "oauth2",
       "kerberos",
       "ldap",
+      "externalBrowser",
       "clientCertificate",
       "customDriverOptions"
     ],

@@ -3,7 +3,7 @@
   "manifestVersion": 1,
   "id": "irodori.trino-presto",
   "name": "Trino / Presto Connector",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "irodori",
   "description": "Trino / Presto Connector contributes the Trino / Presto database connector through the native connector ABI.",
   "license": "MIT OR 0BSD",
@@ -227,6 +227,38 @@
               ]
             },
             {
+              "id": "jwt",
+              "label": "JWT bearer token",
+              "kind": "token",
+              "secretPurposes": [
+                "token"
+              ],
+              "fields": [
+                {
+                  "id": "token",
+                  "label": "Token",
+                  "type": "secret",
+                  "secretPurpose": "token"
+                }
+              ]
+            },
+            {
+              "id": "accessToken",
+              "label": "Access token",
+              "kind": "token",
+              "secretPurposes": [
+                "token"
+              ],
+              "fields": [
+                {
+                  "id": "token",
+                  "label": "Token",
+                  "type": "secret",
+                  "secretPurpose": "token"
+                }
+              ]
+            },
+            {
               "id": "oauth2",
               "label": "OAuth 2.0",
               "kind": "oauth2",
@@ -302,6 +334,15 @@
                   "profileField": "password"
                 }
               ]
+            },
+            {
+              "id": "externalBrowser",
+              "label": "External browser",
+              "kind": "browserSso",
+              "secretPurposes": [
+                "token"
+              ],
+              "fields": []
             },
             {
               "id": "clientCertificate",
