@@ -3,7 +3,7 @@
   "manifestVersion": 1,
   "id": "irodori.trino-presto",
   "name": "Trino / Presto Connector",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "irodori",
   "description": "Trino / Presto Connector contributes the Trino / Presto database connector through the native connector ABI.",
   "license": "MIT OR 0BSD",
